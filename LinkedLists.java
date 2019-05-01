@@ -20,6 +20,23 @@ public class LinkedLists {
 		}
 	}
 
+	
+	public void reverse(){
+		
+		Node curr = head;
+		Node prev = null;
+		Node next = null ;
+		while(curr !=null){
+			next = curr.next;
+			curr.next = prev;
+			prev = curr;
+			curr = next;
+		}
+		head = prev;
+		//print reverse linkedlist
+		show();		
+	}
+	
 	public void show(){
 		Node node = head;
 		while(node.next!=null){
@@ -28,6 +45,4 @@ public class LinkedLists {
 		}
 		System.out.println(node.data);
 	}
-
-
 }

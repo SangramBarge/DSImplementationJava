@@ -6,5 +6,6 @@ public static void main(String[] args) {
 	list.insert(12);
 	list.insert(31);
 	list.show();
+	list.reverse();
 } 
 }
